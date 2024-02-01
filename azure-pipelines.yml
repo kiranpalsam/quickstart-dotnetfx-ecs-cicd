@@ -50,7 +50,7 @@ stages:
       name: RegisterNewTaskDefinition
       displayName: Update Image URI
       inputs:
-        awsCredentials: 'AppAccount'
+        awsCredentials: 'AzureDevOpsAwsService'
         regionName: 'us-east-1'
         scriptType: 'inline'
         inlineScript: |
@@ -67,7 +67,7 @@ stages:
       name: DeployECS
       displayName: Deploy to ECS
       inputs:
-        awsCredentials: 'AppAccount'
+        awsCredentials: 'AzureDevOpsAwsService'
         regionName: 'us-east-1'
         scriptType: 'inline'
         inlineScript: |
