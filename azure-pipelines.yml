@@ -26,7 +26,7 @@ stages:
       name: ECRPush
       displayName: Push to ECR
       inputs:
-        awsCredentials: 'SharedServices'
+        awsCredentials: 'AzureDevOpsAwsService'
         regionName: 'us-east-1'
         imageSource: 'imagename'
         sourceImageName: 'agency/app'
